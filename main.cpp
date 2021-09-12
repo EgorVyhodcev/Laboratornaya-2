@@ -2,22 +2,28 @@
 
 using namespace std;
 
+int cows (int);
+
 int main()
 {
     int cow;
     cout << "Enter the amount of cows: ";
     cin >> cow ;
+    cows(cow);
     cout << endl;
-    if ( cow == 11 || cow == 12 || cow == 13 || cow == 14)
+    return 0;
+}
+
+int cows (int c){
+     if ( c == 11 || c == 12 || c == 13 || c == 14)
     {
-       cout << cow << " " << "korov\n";
+       cout << c << " " << "korov\n";
        return 0;
     }
-    if (cow % 10 == 1)
-        cout << cow << " " << "korova\n";
-    if (cow % 10 == 0 || cow % 10 == 5 || cow % 10 == 6 || cow % 10 == 7 || cow % 10 == 8 || cow % 10 == 9)
-        cout << cow << " " << "korov\n";
-    if (cow % 10 == 2 || cow % 10 == 3 || cow % 10 == 4)
-        cout << cow << " " << "korovy\n";
-    return 0;
+    if (c % 10 == 1)
+        cout << c << " " << "korova\n";
+    if (c % 10 == 0 || c % 10 == 5 || c % 10 == 6 || c % 10 == 7 || c % 10 == 8 || c % 10 == 9)
+        cout << c << " " << "korov\n";
+    if (c % 10 == 2 || c % 10 == 3 || c % 10 == 4)
+        cout << c << " " << "korovy\n";
 }
