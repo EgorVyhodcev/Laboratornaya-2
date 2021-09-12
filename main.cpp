@@ -4,20 +4,20 @@ using namespace std;
 
 int main()
 {
-    int n;
+    int cow;
     cout << "Enter the amount of cows: ";
-    cin >> n ;
+    cin >> cow ;
     cout << endl;
-    if ( n == 11 || n == 12 || n == 13 || n == 14)
+    if ( cow == 11 || cow == 12 || cow == 13 || cow == 14)
     {
-       cout << n << " " << "korov\n";
+       cout << cow << " " << "korov\n";
        return 0;
     }
-    if (n % 10 == 1)
-        cout << n << " " << "korova\n";
-    if (n % 10 == 0 || n % 10 == 5 || n % 10 == 6 || n % 10 == 7 || n % 10 == 8 || n % 10 == 9)
-        cout << n << " " << "korov\n";
-    if (n % 10 == 2 || n % 10 == 3 || n % 10 == 4)
-        cout << n << " " << "korovy\n";
+    if (cow % 10 == 1)
+        cout << cow << " " << "korova\n";
+    if (cow % 10 == 0 || cow % 10 == 5 || cow % 10 == 6 || cow % 10 == 7 || cow % 10 == 8 || cow % 10 == 9)
+        cout << cow << " " << "korov\n";
+    if (cow % 10 == 2 || cow % 10 == 3 || cow % 10 == 4)
+        cout << cow << " " << "korovy\n";
     return 0;
 }
