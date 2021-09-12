@@ -2,19 +2,19 @@
 
 using namespace std;
 
-int cows (int);
+int count_cows (int);
 
 int main()
 {
     int cow;
     cout << "Enter the amount of cows: ";
     cin >> cow ;
-    cows(cow);
+    count_cows(cow);
     cout << endl;
     return 0;
 }
 
-int cows (int c){
+int count_cows (int c){
      if ( c == 11 || c == 12 || c == 13 || c == 14)
     {
        cout << c << " " << "korov\n";
