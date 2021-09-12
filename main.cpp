@@ -5,7 +5,9 @@ using namespace std;
 int main()
 {
     int n;
+    cout << "Enter the amount of cows: ";
     cin >> n ;
+    cout << endl;
     if ( n == 11 || n == 12 || n == 13 || n == 14)
     {
        cout << n << " " << "korov\n";
